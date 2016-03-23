@@ -40,7 +40,7 @@
         <rdfs:comment>Work will be carried out for Phenomenal WP 8 Data standards and will also serve the MetSoc Ident Task force 
 Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.</rdfs:comment>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
-        <owl:imports rdf:resource="https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.owl"/>
+        <owl:imports rdf:resource="&obo;eco.owl"/>
     </owl:Ontology>
     
 

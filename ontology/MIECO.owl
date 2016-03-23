@@ -1,0 +1,822 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY doap "http://usefulinc.com/ns/doap#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/alle/ontologies/2016/1/untitled-ontology-66#"
+     xml:base="http://www.semanticweb.org/alle/ontologies/2016/1/untitled-ontology-66"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:doap="http://usefulinc.com/ns/doap#">
+    <owl:Ontology rdf:about="http://metabolomicssociety.org/ontologies/MIECO">
+        <rdfs:label xml:lang="en">Metabolite Identification Evidence Code Ontology (MIECO)</rdfs:label>
+        <doap:documenter rdf:datatype="&xsd;string">Daniel Schober</doap:documenter>
+        <doap:implements rdf:datatype="&xsd;string">ECO</doap:implements>
+        <foaf:homepage rdf:datatype="&xsd;string">TBA</foaf:homepage>
+        <doap:bug-database rdf:datatype="&xsd;string">TBA</doap:bug-database>
+        <doap:audience rdf:datatype="&xsd;string">This CV is to be used by metabolomics researchers who intend to annotate their experimental results with scientific evidences in a manual or computer assisted way.</doap:audience>
+        <doap:location rdf:datatype="&xsd;string">git TBA</doap:location>
+        <doap:mailing-list rdf:datatype="&xsd;string">https: TBA</doap:mailing-list>
+        <doap:maintainer rdf:datatype="&xsd;string">https://docs.google.com/document/d/1_-Y1AJx6w9-uqoaoqIKbwo6VJlCWo9V0AR0k8hrPf0Y/edit</doap:maintainer>
+        <rdfs:seeAlso>https://github.com/DSchober/MIECO</rdfs:seeAlso>
+        <owl:versionInfo>0.1</owl:versionInfo>
+        <oboInOwl:created_by>Daniel Schober</oboInOwl:created_by>
+        <obo:IAO_0000115 xml:lang="en">A DL ontology based on ECO to serve Metabolomics repositories with a formal ontology of terms describing evidences for molecule identification assertions.</obo:IAO_0000115>
+        <rdfs:comment>Work will be carried out for Phenomenal WP 8 Data standards and will also serve the MetSoc Ident Task force 
+Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.</rdfs:comment>
+        <owl:imports rdf:resource="&obo;bfo.owl"/>
+        <owl:imports rdf:resource="https://raw.githubusercontent.com/evidenceontology/evidenceontology/master/eco.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000060 -->
+
+    <owl:ObjectProperty rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000060">
+        <rdfs:label xml:lang="de">of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000061 -->
+
+    <owl:ObjectProperty rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000061">
+        <rdfs:label xml:lang="de">via</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000074 -->
+
+    <owl:ObjectProperty rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000074">
+        <rdfs:label xml:lang="de">supports</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000001 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000001">
+        <rdfs:label xml:lang="de">Complete structural identification by LCMS similarity to authentic reference standard</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000061"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000068"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;ECO_9000000"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000070"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000074"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000073"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000002 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000002">
+        <rdfs:label xml:lang="de">Characterisation by LCMS similarity to literature reference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001052"/>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000003 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000003">
+        <rdfs:label xml:lang="de">Characterisation by LCMS similarity to database reference</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001052"/>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000004 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000004">
+        <rdfs:label xml:lang="de">Characterisation by RT similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000005 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000005">
+        <rdfs:label xml:lang="de">Characterisation by LC RT similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000006 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000006">
+        <rdfs:label xml:lang="de">Characterisation by GC RT similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000007 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000007">
+        <rdfs:label xml:lang="de">Characterisation by fragmentation pattern in MS1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000008 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000008">
+        <rdfs:label xml:lang="de">Characterisation by LCMS similarity to other property of molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000009 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000009">
+        <rdfs:label xml:lang="de">Characterisation by m/z value in MS1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000010 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000010">
+        <rdfs:label xml:lang="de">Characterisation by fragmentation pattern in MS2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000011 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000011">
+        <rdfs:label xml:lang="de">Characterisation by m/z value in MS2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000012 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000012">
+        <rdfs:label xml:lang="de">Characterisation by online HD exchange experiment identified substructure revealing exchangeable protons</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000013 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000013">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000014 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000014">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion [M+-I]+-</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000015 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000015">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion in positive ESI mode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000016 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000016">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion in negative ESI mode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000017 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000017">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2 by characteristic neutral loss of part of molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000018 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000018">
+        <rdfs:label xml:lang="de">Characterisation by collision induced dissociation (CID) MS2 by number of exchangeable protons of fragment ions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000019 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000019">
+        <rdfs:label xml:lang="de">Characterisation based on acid-catalysed hydrolysis experiment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000020 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000020">
+        <rdfs:label xml:lang="de">Characterisation based Isotopologue detection by LCMS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000021 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000021">
+        <rdfs:label xml:lang="de">Characterisation by stereochemistry assay evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000022 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000022">
+        <rdfs:label xml:lang="de">circular dichroism based stereochemistry assay evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000023 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000023">
+        <rdfs:label xml:lang="de">alpha D value stereochemistry assay evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000021"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000024 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000024">
+        <rdfs:label xml:lang="de">Characterisation by optical absorbance spectrum assay similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000091"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000025 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000025">
+        <rdfs:label xml:lang="de">Characterisation by IR absorbance spectrum assay similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000026 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000026">
+        <rdfs:label xml:lang="de">Characterisation by UV absorbance spectrum assay similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000024"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000027 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000027">
+        <rdfs:label xml:lang="de">Characterisation by high resolution RT similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000004"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000028 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000028">
+        <rdfs:label xml:lang="de">Characterisation by RI similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000325"/>
+        <rdfs:comment>RI Retention Index</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000029 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000029">
+        <rdfs:label xml:lang="de">high resolution mass spectrometry evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000030 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000030">
+        <rdfs:label xml:lang="de">1D NMR spectroscopy evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000031 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000031">
+        <rdfs:label xml:lang="de">2D NMR spectroscopy evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000032 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000032">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by dimensionality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000033 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000033">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by acquisition nucleus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000034 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000034">
+        <rdfs:label xml:lang="de">H1 based NMR spectroscopy evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000035 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000035">
+        <rdfs:label xml:lang="de">C14 based NMR spectroscopy evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000036 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000036">
+        <rdfs:label xml:lang="de">N based NMR spectroscopy evidence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000033"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000037 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000037">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by excitation frequency</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000038 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000038">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by pulse sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001105"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000039 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000039">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by TCOSY pulse sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000040 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000040">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by COSY pulse sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000041 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000041">
+        <rdfs:label xml:lang="de">NMR spectroscopy evidence by HMBC pulse sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000038"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000044 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000044">
+        <rdfs:label xml:lang="de">Characterisation by Kovats RI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000045 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000045">
+        <rdfs:label xml:lang="de">Characterisation by FAME RI</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000046 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000046">
+        <rdfs:label xml:lang="de">high resolution RI similarity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000028"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000047 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000047">
+        <rdfs:label xml:lang="de">Assertion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000048 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000048">
+        <rdfs:label xml:lang="de">Characterisation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000051"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000049 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000049">
+        <rdfs:label xml:lang="de">Classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000050 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000050">
+        <rdfs:label xml:lang="de">Identification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000051 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000051">
+        <rdfs:label xml:lang="de">Annotation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000047"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052">
+        <rdfs:label xml:lang="de">Molecular structural element</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000053 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000053">
+        <rdfs:label xml:lang="de">Molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000054 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000054">
+        <rdfs:label xml:lang="de">molecule class</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000055 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000055">
+        <rdfs:label xml:lang="de">Molecular substructure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000056 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000056">
+        <rdfs:label xml:lang="de">molecular part/ side group / x-conjugate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000055"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000057 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000057">
+        <rdfs:label xml:lang="de">Element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000058 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000058">
+        <rdfs:label xml:lang="de">Isotope</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000057"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000062 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000062">
+        <rdfs:label xml:lang="de">Assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063">
+        <rdfs:label xml:lang="de">Mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000064 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000064">
+        <rdfs:label xml:lang="de">High resolution mass spoectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000065 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000065">
+        <rdfs:label xml:lang="de">Chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000066 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000066">
+        <rdfs:label xml:lang="de">Liquid chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000065"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000067 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000067">
+        <rdfs:label xml:lang="de">Gas chromatography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000065"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000068 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000068">
+        <rdfs:label xml:lang="de">LCMS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000069 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000069">
+        <rdfs:label xml:lang="de">GCMS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000070 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000070">
+        <rdfs:label xml:lang="de">assertion by comparison to authentic reference standard</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000071 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000071">
+        <rdfs:label xml:lang="de">database comparison</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0000218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000072 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000072">
+        <rdfs:label xml:lang="de">MassBank comparison</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000071"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000073 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000073">
+        <rdfs:label xml:lang="de">Identification of molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000079"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000060"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000053"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000075 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000075">
+        <rdfs:label xml:lang="de">NMR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000062"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000076 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000076">
+        <rdfs:label xml:lang="de">1D-NMR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000077 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000077">
+        <rdfs:label xml:lang="de">2D-NMR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000075"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000078 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000078">
+        <rdfs:label xml:lang="de">Tandem MS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000079 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000079">
+        <rdfs:label xml:lang="de">Identification of molecular structural element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000050"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000080 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000080">
+        <rdfs:label xml:lang="de">Ion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000081 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000081">
+        <rdfs:label xml:lang="de">Positive Ion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000080"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000082 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000082">
+        <rdfs:label xml:lang="de">Negative Ion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000080"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000083 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000083">
+        <rdfs:label xml:lang="de">bond</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000052"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000084 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000084">
+        <rdfs:label xml:lang="de">double bond</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000083"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

@@ -41,6 +41,7 @@
 Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.</rdfs:comment>
         <owl:imports rdf:resource="&obo;bfo.owl"/>
         <owl:imports rdf:resource="&obo;eco.owl"/>
+        <owl:imports rdf:resource="http://usefulinc.com/ns/doap#"/>
     </owl:Ontology>
     
 

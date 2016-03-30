@@ -41,7 +41,6 @@
 Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.</rdfs:comment>
         <owl:imports rdf:resource="&obo;eco.owl"/>
         <owl:imports rdf:resource="&obo;obi/obi_core.owl"/>
-        <owl:imports rdf:resource="http://usefulinc.com/ns/doap#"/>
     </owl:Ontology>
     
 
@@ -105,14 +104,14 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
         <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ECO_9000000"/>
-                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000070"/>
+                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000074"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000074"/>
-                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000073"/>
+                <owl:onProperty rdf:resource="&obo;ECO_9000000"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -286,7 +285,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000020 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000020">
-        <rdfs:label xml:lang="de">Characterisation based Isotopologue detection by LCMS</rdfs:label>
+        <rdfs:label xml:lang="de">Characterisation based on Isotopologue detection by LCMS</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
     </owl:Class>
     
@@ -635,7 +634,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000064 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000064">
-        <rdfs:label xml:lang="de">High resolution mass spoectrometry</rdfs:label>
+        <rdfs:label xml:lang="de">High resolution mass spectrometry</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
     </owl:Class>
     
@@ -760,6 +759,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000078">
         <rdfs:label xml:lang="de">Tandem MS</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO:0000063"/>
+        <obo:IAO_0000118>MS2</obo:IAO_0000118>
     </owl:Class>
     
 

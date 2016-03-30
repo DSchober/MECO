@@ -507,7 +507,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Spatial regions do not participate in processes.</obo:IAO_0000116>
         <obo:BFO_0000179>s-region</obo:BFO_0000179>
         <obo:IAO_0000600 xml:lang="en">A spatial region is a continuant entity that is a continuant_part_of spaceR as defined relative to some frame R. (axiom label in BFO2 Reference: [035-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</obo:IAO_0000601>
         <obo:IAO_0000116 xml:lang="en">Spatial region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the union of a spatial point and a spatial line that doesn&apos;t overlap the point, or two spatial lines that intersect at a single point. In both cases the resultant spatial region is neither 0-dimensional, 1-dimensional, 2-dimensional, or 3-dimensional.</obo:IAO_0000116>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
     </owl:Class>
@@ -537,7 +537,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">All continuant parts of spatial regions are spatial regions. (axiom label in BFO2 Reference: [036-001])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000006"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/036-001"/>
@@ -558,7 +558,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0000602>(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] </obo:IAO_0000602>
         <obo:IAO_0000602>(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] </obo:IAO_0000602>
         <obo:IAO_0000600 xml:lang="en">A temporal region is an occurrent entity that is part of time as defined relative to some reference frame. (axiom label in BFO2 Reference: [100-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</obo:IAO_0000601>
         <obo:IAO_0000116 xml:lang="en">Temporal region doesn&apos;t have a closure axiom because the subclasses don&apos;t exhaust all possibilites. An example would be the mereological sum of a temporal instant and a temporal interval that doesn&apos;t overlap the instant. In this case the resultant temporal region is neither 0-dimensional nor 1-dimensional</obo:IAO_0000116>
         <obo:BFO_0000180>TemporalRegion</obo:BFO_0000180>
         <obo:IAO_0000601 xml:lang="en">Every temporal region t is such that t occupies_temporal_region t. (axiom label in BFO2 Reference: [119-002])</obo:IAO_0000601>
@@ -596,7 +596,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/119-002"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">All parts of temporal regions are temporal regions. (axiom label in BFO2 Reference: [101-001])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000008"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/101-001"/>
@@ -652,7 +652,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:BFO_0000179>st-region</obo:BFO_0000179>
         <obo:IAO_0000602>(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] </obo:IAO_0000602>
         <obo:IAO_0000600 xml:lang="en">A spatiotemporal region is an occurrent entity that is part of spacetime. (axiom label in BFO2 Reference: [095-001])</obo:IAO_0000600>
-        <obo:IAO_0000601 xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</obo:IAO_0000601>
+        <obo:IAO_0000601 xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Each spatiotemporal region at any time t projects_onto some spatial region at t. (axiom label in BFO2 Reference: [099-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Each spatiotemporal region projects_onto some temporal region. (axiom label in BFO2 Reference: [098-001])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">Every spatiotemporal region occupies_spatiotemporal_region itself.</obo:IAO_0000601>
@@ -669,7 +669,7 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/107-002"/>
     </owl:Axiom>
     <owl:Axiom>
-        <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
+        <owl:annotatedTarget xml:lang="en">All parts of spatiotemporal regions are spatiotemporal regions. (axiom label in BFO2 Reference: [096-001])</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/BFO_0000011"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000601"/>
         <obo:IAO_0010000 rdf:resource="http://purl.obolibrary.org/obo/bfo/axiom/096-001"/>
@@ -1729,4 +1729,3 @@ See the BFO 2 release notes for further information about BFO 2. Please note tha
 
 
 <!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
-

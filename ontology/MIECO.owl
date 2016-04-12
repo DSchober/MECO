@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/alle/ontologies/2016/1/untitled-ontology-66#"
-     xml:base="http://www.semanticweb.org/alle/ontologies/2016/1/untitled-ontology-66"
+<rdf:RDF xmlns="http://metabolomicssociety.org/ontologies/MIECO#"
+     xml:base="http://metabolomicssociety.org/ontologies/MIECO"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
@@ -16,14 +16,13 @@
     <owl:Ontology rdf:about="http://metabolomicssociety.org/ontologies/MIECO">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obi/obi_core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/eco.owl"/>
-        <doap:implements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO</doap:implements>
         <doap:location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://raw.githubusercontent.com/DSchober/MIECO/master/ontology/MIECO.owl</doap:location>
+        <doap:implements rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ECO</doap:implements>
+        <obo:IAO_0000115 xml:lang="en">An ontology based on ECO to serve Metabolomics repositories with a taxonomy of terms describing evidences for molecule characterization and identification assertions.</obo:IAO_0000115>
         <doap:documenter rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Daniel Schober</doap:documenter>
         <doap:maintainer rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://docs.google.com/document/d/1_-Y1AJx6w9-uqoaoqIKbwo6VJlCWo9V0AR0k8hrPf0Y/edit</doap:maintainer>
         <rdfs:seeAlso>https://github.com/DSchober/MIECO</rdfs:seeAlso>
         <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TBA</foaf:homepage>
-        <obo:IAO_0000115 xml:lang="en">A DL ontology based on ECO to serve Metabolomics repositories with a formal ontology of terms describing evidences for molecule identification assertions.</obo:IAO_0000115>
-        <doap:audience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This CV is to be used by metabolomics researchers who intend to annotate their experimental results with scientific evidences in a manual or computer assisted way.</doap:audience>
         <doap:mailing-list rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https: TBA</doap:mailing-list>
         <rdfs:comment>Work will be carried out for Phenomenal WP 8 Data standards and will also serve the MetSoc Ident Task force 
 Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.</rdfs:comment>
@@ -31,6 +30,8 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
         <doap:bug-database rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://github.com/DSchober/MIECO/issues</doap:bug-database>
         <owl:versionInfo>0.1</owl:versionInfo>
         <oboInOwl:created_by>Daniel Schober</oboInOwl:created_by>
+        <doap:audience rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This CV is to be used by metabolomics researchers who intend to annotate their experimental results in metabolomics with scientific evidences in a manual or computer assisted way.</doap:audience>
+        <doap:maintainer>http://phenomenal-h2020.eu/home/workpackages/wp8-data-provenance-compliance-and-integrity/</doap:maintainer>
     </owl:Ontology>
     
 

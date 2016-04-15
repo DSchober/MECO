@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/iao/2015-02-23/ontology-metadata.owl" uri="external/ontology-metadata.owl"/>
+    <uri id="User Entered Import Resolution" name="http://xmlns.com/foaf/0.1/index.rdf" uri="external/index.rdf"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/obi/obi_core.owl" uri="external/obi_core.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="http://metabolomicssociety.org/ontologies/MIECO.owl" uri="MIECO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/annotations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/bfo-classes-minimal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/temporal-intervals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="http://purl.obolibrary.org/obo/eco.owl" uri="external/eco.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="http://purl.obolibrary.org/obo/iao/ontology-metadata.owl" uri="external/ontology-metadata.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1460723720145" name="http://purl.obolibrary.org/obo/obi.owl" uri="external/obi_core.owl"/>
+    </group>
+</catalog>

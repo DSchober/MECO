@@ -942,6 +942,33 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;ECO_0000352"/>
     </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000096 -->
+
+    <owl:Class rdf:about="&mieco;MIECO_0000096">
+        <rdfs:label xml:lang="de">Classification by LCMS experiment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000097 -->
+
+    <owl:Class rdf:about="&mieco;MIECO_0000097">
+        <rdfs:label xml:lang="de">Classification based on RT and m/z value in MS2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&mieco;MIECO_0000096"/>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000098 -->
+
+    <owl:Class rdf:about="&mieco;MIECO_0000098">
+        <rdfs:label xml:lang="de">Unknown assignment based on RT and m/z value in MS2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
+    </owl:Class>
 </rdf:RDF>
 
 

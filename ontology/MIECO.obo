@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:09:2016 12:23
+date: 05:09:2016 15:58
 saved-by: dschober
 auto-generated-by: The OWL API (version 3.4.2)
 import: http://purl.obolibrary.org/obo/obi/obi_core.owl
@@ -75,6 +75,7 @@ is_a: ECO_0001096
 [Term]
 id: MIECO_0000008
 name: Characterisation by LCMS similarity to other property of molecule
+is_a: ECO_0001052
 is_a: ECO_0001096
 
 [Term]
@@ -474,12 +475,12 @@ is_a: MIECO_0000085
 
 [Term]
 id: MIECO_0000093
-name: Characterisation by elemental composition
+name: Characterisation based on MS determined elemental composition
 is_a: ECO_0001096
 
 [Term]
 id: MIECO_0000094
-name: characterisation by sum formula
+name: characterisation by MS determined sum formula
 is_a: MIECO_0000093
 
 [Term]
@@ -494,6 +495,7 @@ relationship: ECO_9000000 ECO_0000203
 [Term]
 id: MIECO_0000096
 name: Classification by LCMS experiment
+is_a: ECO_0001052
 is_a: ECO_0001096
 
 [Term]
@@ -504,7 +506,9 @@ is_a: MIECO_0000096
 [Term]
 id: MIECO_0000098
 name: Unknown assignment based on RT and m/z value in MS2
+is_a: ECO_0001052
 is_a: ECO_0001096
+IAO_0000115: The known unknowns from an LCMS assay outcome.
 
 [Term]
 id: MIECO_0000099
@@ -543,45 +547,45 @@ is_a: ECO_0000000
 
 [Term]
 id: MIECO_0000105
-name: Schymanski 2014 metabolite identification level
+name: Eawag 2014 metabolite identification level
 is_a: MIECO_0000104
 hasDbXref: http://pubs.acs.org/doi/ipdf/10.1021/es5002105
 IAO_0000116: rebin into mass spectrometry evidence
-IAO_0000115: An expansion of the MSI scheme described in a paper at doi:10.1021/es5002105
+IAO_0000115: An expansion of the MSI scheme described in a paper by Schymanski E et al. (2014) at doi:10.1021/es5002105
 
 [Term]
 id: MIECO_0000106
-name: Schymanski level 1: Confirmed structure
+name: Eawag level 1: Confirmed structure
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000107
-name: Schymanski level 2: Probable structure evidence
+name: Eawag level 2: Probable structure evidence
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000108
-name: Schymanski level 2a: Probable structure evidence by library spectrum match
+name: Eawag level 2a: Probable structure evidence by library spectrum match
 is_a: MIECO_0000107
 
 [Term]
 id: MIECO_0000109
-name: Schymanski level 2b: Probable structure evidence by diagnostic evidence
+name: Eawag level 2b: Probable structure evidence by diagnostic evidence
 is_a: MIECO_0000107
 
 [Term]
 id: MIECO_0000110
-name: Schymanski level 3: Tentative candidate evidence
+name: Eawag level 3: Tentative candidate evidence
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000111
-name: Schymanski level 4: Unequivocal molecular formula evidence
+name: Eawag level 4: Unequivocal molecular formula evidence
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000112
-name: Schymanski level 5: Exact mass of interest evidence
+name: Eawag level 5: Exact mass of interest evidence
 is_a: MIECO_0000105
 
 [Term]

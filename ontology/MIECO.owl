@@ -958,7 +958,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000099 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000099">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104"/>
         <obo:IAO_0000115 xml:lang="en">Identification level attribute of a single metabolite identification item as described in doi:10.1007/s11306-007-0082-2&quot; [MSI:10.1007/s11306-007-0082-2]</obo:IAO_0000115>
         <rdfs:label xml:lang="de">MSI 2007 metabolite identification level</rdfs:label>
     </owl:Class>
@@ -1001,6 +1001,90 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000099"/>
         <obo:IAO_0000115 xml:lang="en">An unidentified or unclassified metabolite, which can still be differentiated and quantified based upon spectral data, as described in doi:10.1007/s11306-007-0082-2&quot; [MSI:10.1007/s11306-007-0082-2]</obo:IAO_0000115>
         <rdfs:label xml:lang="de">MSI level 4: Unknown compound</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ECO_0000000"/>
+        <rdfs:label xml:lang="de">Metabolite identification evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104"/>
+        <obo:IAO_0000115 xml:lang="en">An expansion of the MSI scheme described in a paper at doi:10.1021/es5002105</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">rebin into mass spectrometry evidence</obo:IAO_0000116>
+        <oboInOwl:hasDbXref xml:lang="en">http://pubs.acs.org/doi/ipdf/10.1021/es5002105</oboInOwl:hasDbXref>
+        <rdfs:label xml:lang="de">Schymanski 2014 metabolite identification level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000106 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000106">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
+        <rdfs:label xml:lang="de">Schymanski level 1: Confirmed structure</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
+        <rdfs:label xml:lang="de">Schymanski level 2: Probable structure evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000108 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000108">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107"/>
+        <rdfs:label xml:lang="de">Schymanski level 2a: Probable structure evidence by library spectrum match</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000109 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000109">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107"/>
+        <rdfs:label xml:lang="de">Schymanski level 2b: Probable structure evidence by diagnostic evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000110 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000110">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
+        <rdfs:label xml:lang="de">Schymanski level 3: Tentative candidate evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000111 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000111">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
+        <rdfs:label xml:lang="de">Schymanski level 4: Unequivocal molecular formula evidence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000112 -->
+
+    <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000112">
+        <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
+        <rdfs:label xml:lang="de">Schymanski level 5: Exact mass of interest evidence</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 

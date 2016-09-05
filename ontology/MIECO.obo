@@ -1,0 +1,622 @@
+format-version: 1.2
+date: 05:09:2016 10:21
+saved-by: dschober
+auto-generated-by: The OWL API (version 3.4.2)
+import: http://purl.obolibrary.org/obo/obi/obi_core.owl
+import: http://purl.obolibrary.org/obo/eco.owl
+id_space: rdfs http://www.w3.org/2000/01/rdf-schema#
+id_space: obo http://purl.obolibrary.org/obo/
+id_space: owl http://www.w3.org/2002/07/owl#
+id_space: oboInOwl http://www.geneontology.org/formats/oboInOwl#
+id_space: xsd http://www.w3.org/2001/XMLSchema#
+id_space: foaf http://xmlns.com/foaf/0.1/
+id_space: doap http://usefulinc.com/ns/doap#
+id_space: MIECO http://metabolomicssociety.org/ontologies/MIECO#
+id_space: rdf http://www.w3.org/1999/02/22-rdf-syntax-ns#
+remark: Work will be carried out for Phenomenal WP 8 Data standards and will also serve the MetSoc Ident Task force 
+Build in a middle out approach, starting with a LC-MS Assay use case and then successively expanded to integrate other metabolomics techniques like NMR, UV, IR Spectrometry and others.
+created_by: Daniel Schober
+versionInfo: 0.1
+audience: This CV is to be used by metabolomics researchers who intend to annotate their experimental results in metabolomics with scientific evidences in a manual or computer assisted way.
+location: https://raw.githubusercontent.com/DSchober/MIECO/master/ontology/MIECO.owl
+bug-database: https://github.com/DSchober/MIECO/issues
+implements: ECO
+label: Metabolite Identification Evidence Code Ontology (MIECO)
+seeAlso: https://github.com/DSchober/MIECO
+documenter: Daniel Schober
+IAO_0000115: An ontology based on ECO to serve Metabolomics repositories with a taxonomy of terms describing evidences for molecule characterization and identification assertions.
+homepage: TBA
+maintainer: http://phenomenal-h2020.eu/home/workpackages/wp8-data-provenance-compliance-and-integrity/
+
+
+! ----------------------  CLASSES  -------------------------
+
+[Term]
+id: MIECO_0000001
+name: Complete structural identification by LCMS similarity to authentic reference standard
+is_a: ECO_0001096
+intersection_of: Thing
+intersection_of: MIECO_0000061 MIECO_0000068
+relationship: MIECO_0000061 MIECO_0000068
+
+
+[Term]
+id: MIECO_0000002
+name: characterisation by LCMS similarity to literature reference
+is_a: ECO_0001052
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000003
+name: characterisation by LCMS similarity to database reference
+is_a: ECO_0001052
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000004
+name: characterisation by RT similarity
+is_a: ECO_0000325
+
+[Term]
+id: MIECO_0000005
+name: characterisation by LC RT similarity
+is_a: MIECO_0000004
+
+[Term]
+id: MIECO_0000006
+name: characterisation by GC RT similarity
+is_a: MIECO_0000004
+
+[Term]
+id: MIECO_0000007
+name: Characterisation by fragmentation pattern in MS1
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000008
+name: Characterisation by LCMS similarity to other property of molecule
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000009
+name: Characterisation by m/z value in MS1
+is_a: MIECO_0000007
+
+[Term]
+id: MIECO_0000010
+name: Characterisation by fragmentation pattern in MS2
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000011
+name: Characterisation by m/z value in MS2
+is_a: MIECO_0000010
+
+[Term]
+id: MIECO_0000012
+name: Characterisation by online HD exchange experiment identified substructure revealing exchangeable protons
+comment: This might be a chromatography rather than MS evidence
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000013
+name: Characterisation by collision induced dissociation (CID) MS2
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000014
+name: Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion [M+-I]+-
+is_a: MIECO_0000013
+
+[Term]
+id: MIECO_0000015
+name: Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion in positive ESI mode
+is_a: MIECO_0000014
+
+[Term]
+id: MIECO_0000016
+name: Characterisation by collision induced dissociation (CID) MS2 with mass and isotope pattern of quasi-molecular fragment ion in negative ESI mode
+is_a: MIECO_0000014
+
+[Term]
+id: MIECO_0000017
+name: Characterisation by collision induced dissociation (CID) MS2 by characteristic neutral loss of part of molecule
+is_a: MIECO_0000013
+
+[Term]
+id: MIECO_0000018
+name: Characterisation by collision induced dissociation (CID) MS2 by number of exchangeable protons of fragment ions
+comment: Check, as proton exchange occurs in LC, not MS part
+is_a: MIECO_0000013
+
+[Term]
+id: MIECO_0000019
+name: Characterisation based on acid-catalysed hydrolysis experiment
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000020
+name: Characterisation based on Isotopologue detection by LCMS
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000021
+name: Characterisation by stereochemistry assay evidence
+is_a: ECO_0000091
+
+[Term]
+id: MIECO_0000022
+name: circular dichroism based stereochemistry assay evidence
+is_a: MIECO_0000021
+
+[Term]
+id: MIECO_0000023
+name: alpha D value stereochemistry assay evidence
+is_a: MIECO_0000021
+
+[Term]
+id: MIECO_0000024
+name: Characterisation by optical absorbance spectrum assay similarity
+is_a: ECO_0000091
+
+[Term]
+id: MIECO_0000025
+name: Characterisation by IR absorbance spectrum assay similarity
+is_a: MIECO_0000024
+
+[Term]
+id: MIECO_0000026
+name: Characterisation by UV absorbance spectrum assay similarity
+is_a: MIECO_0000024
+
+[Term]
+id: MIECO_0000027
+name: characterisation by high resolution RT similarity
+is_a: MIECO_0000004
+
+[Term]
+id: MIECO_0000028
+name: characterisation by RI similarity
+comment: RI Retention Index
+is_a: ECO_0000325
+
+[Term]
+id: MIECO_0000029
+name: high resolution mass spectrometry evidence
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000030
+name: 1D NMR spectroscopy evidence
+is_a: MIECO_0000032
+
+[Term]
+id: MIECO_0000031
+name: 2D NMR spectroscopy evidence
+is_a: MIECO_0000032
+
+[Term]
+id: MIECO_0000032
+name: NMR spectroscopy evidence by dimensionality
+is_a: ECO_0001105
+
+[Term]
+id: MIECO_0000033
+name: NMR spectroscopy evidence by acquisition nucleus
+is_a: ECO_0001105
+
+[Term]
+id: MIECO_0000034
+name: H1 based NMR spectroscopy evidence
+is_a: MIECO_0000033
+
+[Term]
+id: MIECO_0000035
+name: C14 based NMR spectroscopy evidence
+is_a: MIECO_0000033
+
+[Term]
+id: MIECO_0000036
+name: N based NMR spectroscopy evidence
+is_a: MIECO_0000033
+
+[Term]
+id: MIECO_0000037
+name: NMR spectroscopy evidence by excitation frequency
+is_a: ECO_0001105
+
+[Term]
+id: MIECO_0000038
+name: NMR spectroscopy evidence by pulse sequence
+is_a: ECO_0001105
+
+[Term]
+id: MIECO_0000039
+name: NMR spectroscopy evidence by TCOSY pulse sequence
+is_a: MIECO_0000038
+
+[Term]
+id: MIECO_0000040
+name: NMR spectroscopy evidence by COSY pulse sequence
+is_a: MIECO_0000038
+
+[Term]
+id: MIECO_0000041
+name: NMR spectroscopy evidence by HMBC pulse sequence
+is_a: MIECO_0000038
+
+[Term]
+id: MIECO_0000044
+name: characterisation by Kovats RI
+is_a: MIECO_0000028
+
+[Term]
+id: MIECO_0000045
+name: characterisation by FAME RI
+is_a: MIECO_0000028
+
+[Term]
+id: MIECO_0000046
+name: high resolution RI similarity
+is_a: MIECO_0000028
+
+[Term]
+id: MIECO_0000047
+name: assertion
+is_a: Thing
+
+[Term]
+id: MIECO_0000048
+name: characterisation
+is_a: MIECO_0000051
+
+[Term]
+id: MIECO_0000049
+name: classification
+is_a: MIECO_0000048
+
+[Term]
+id: MIECO_0000050
+name: identification
+is_a: MIECO_0000049
+
+[Term]
+id: MIECO_0000051
+name: annotation
+is_a: MIECO_0000047
+
+[Term]
+id: MIECO_0000052
+name: molecular structural element
+is_a: Thing
+
+[Term]
+id: MIECO_0000053
+name: molecule
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000054
+name: molecule class
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000055
+name: molecular substructure
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000056
+name: molecular part/ functional group / x-conjugate
+is_a: MIECO_0000055
+
+[Term]
+id: MIECO_0000057
+name: chemical element
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000058
+name: isotope
+is_a: MIECO_0000057
+
+[Term]
+id: MIECO_0000062
+name: assay
+is_a: Thing
+
+[Term]
+id: MIECO_0000063
+name: mass spectrometry
+is_a: MIECO_0000062
+
+[Term]
+id: MIECO_0000064
+name: high resolution mass spectrometry
+is_a: MIECO_0000063
+
+[Term]
+id: MIECO_0000065
+name: chromatography
+is_a: MIECO_0000062
+
+[Term]
+id: MIECO_0000066
+name: liquid chromatography
+is_a: MIECO_0000065
+
+[Term]
+id: MIECO_0000067
+name: gas chromatography
+is_a: MIECO_0000065
+
+[Term]
+id: MIECO_0000068
+name: liquid chromatography mass spectrometry (LC-MS)
+is_a: MIECO_0000063
+intersection_of: OBI_0000293 MIECO_0000066
+intersection_of: MIECO_0000063
+relationship: OBI_0000293 MIECO_0000066
+
+
+[Term]
+id: MIECO_0000069
+name: gas chromatography mass spectrometry (GC-MS)
+is_a: MIECO_0000063
+intersection_of: OBI_0000293 MIECO_0000067
+intersection_of: MIECO_0000063
+relationship: OBI_0000293 MIECO_0000067
+
+IAO_0000116: I am pressing the has_specified_input relation into service here as I miss the precebed_by relation...
+
+[Term]
+id: MIECO_0000070
+name: assertion by comparison to authentic reference standard
+is_a: ECO_0000218
+
+[Term]
+id: MIECO_0000071
+name: assertion by database comparison
+is_a: ECO_0000218
+
+[Term]
+id: MIECO_0000072
+name: assertion by MassBank comparison
+is_a: MIECO_0000071
+
+[Term]
+id: MIECO_0000073
+name: identification of molecule
+is_a: MIECO_0000079
+relationship: MIECO_0000060 MIECO_0000053
+
+
+[Term]
+id: MIECO_0000075
+name: NMR
+is_a: MIECO_0000062
+
+[Term]
+id: MIECO_0000076
+name: 1D-NMR
+is_a: MIECO_0000075
+
+[Term]
+id: MIECO_0000077
+name: 2D-NMR
+is_a: MIECO_0000075
+
+[Term]
+id: MIECO_0000078
+name: tandem mass spectrometry
+is_a: MIECO_0000063
+intersection_of: OBI_0000293 MIECO_0000063
+intersection_of: MIECO_0000063
+relationship: OBI_0000293 MIECO_0000063
+IAO_0000118: MS2
+
+[Term]
+id: MIECO_0000079
+name: identification of molecular structural element
+is_a: MIECO_0000050
+
+[Term]
+id: MIECO_0000080
+name: ion
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000081
+name: positive ion
+is_a: MIECO_0000080
+
+[Term]
+id: MIECO_0000082
+name: negative ion
+is_a: MIECO_0000080
+
+[Term]
+id: MIECO_0000083
+name: bond
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000084
+name: double bond
+is_a: MIECO_0000083
+
+[Term]
+id: MIECO_0000085
+name: mass spectrometry by ionisation method
+is_a: MIECO_0000063
+IAO_0000116: could use PSI MS iosisation types, in case postcoordination would allow for term creation upon usage... http://bioportal.bioontology.org/ontologies/MS/?p=classes&conceptid=http%3A%2F%2Fpurl.obolibrary.org%2Fobo%2FMS_1000008
+
+[Term]
+id: MIECO_0000086
+name: mass spectrometry by electrospray ionisation (ESI-MS)
+is_a: MIECO_0000085
+
+[Term]
+id: MIECO_0000087
+name: mass spectrometry by fast atom bombardment ionisation (FAB-MS)
+is_a: MIECO_0000085
+
+[Term]
+id: MIECO_0000088
+name: mass spectrometry by matrix assisted laser desorption ionisation (MALDI-MS)
+is_a: MIECO_0000085
+
+[Term]
+id: MIECO_0000089
+name: mass spectrometry by electron impact (EI-MS)
+is_a: MIECO_0000085
+
+[Term]
+id: MIECO_0000093
+name: Characterisation by elemental composition
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000094
+name: characterisation by sum formula
+is_a: MIECO_0000093
+
+[Term]
+id: MIECO_0000095
+name: mass spectrometry evidence used in automatic assertion
+is_a: ECO_0000352
+intersection_of: ECO_9000000 ECO_0000203
+intersection_of: ECO_0001096
+relationship: ECO_9000000 ECO_0000203
+
+[Term]
+id: MIECO_0000096
+name: Classification by LCMS experiment
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000097
+name: Classification based on RT and m/z value in MS2
+is_a: MIECO_0000096
+
+[Term]
+id: MIECO_0000098
+name: Unknown assignment based on RT and m/z value in MS2
+is_a: ECO_0001096
+
+[Term]
+id: MIECO_0000099
+name: MSI 2007 metabolite identification level
+is_a: ECO_0000000
+IAO_0000115: Identification level attribute of a single metabolite identification item as described in doi:10.1007/s11306-007-0082-2" [MSI:10.1007/s11306-007-0082-2]
+
+[Term]
+id: MIECO_0000100
+name: MSI level 1: Identified compound
+is_a: MIECO_0000099
+IAO_0000115: Identified compound using a minimum of two independent and orthogonal data relative to an authentic compound analyzed under identical experimental conditions (e.g. retention time/index and mass spectrum, retention time and NMR spectrum, accurate mass and tandem MS, accurate mass and isotope pattern, full 1H and/or 13C NMR, 2-D NMR spectra), as described in doi:10.1007/s11306-007-0082-2" [MSI:10.1007/s11306-007-0082-2]
+
+[Term]
+id: MIECO_0000101
+name: MSI level 2: Putatively annotated compound
+is_a: MIECO_0000099
+IAO_0000115: Putatively characterized compound class based based upon e.g. characteristic physicochemical properties of a chemical class of compounds, or by spectral similarity to known compounds of a chemical class, as described in doi:10.1007/s11306-007-0082-2" [MSI:10.1007/s11306-007-0082-2]
+
+[Term]
+id: MIECO_0000102
+name: MSI level 3: Identified compound class
+is_a: MIECO_0000099
+IAO_0000115: Putatively characterized compound class based based upon e.g. characteristic physicochemical properties of a chemical class of compounds, or by spectral similarity to known compounds of a chemical class, as described in doi:10.1007/s11306-007-0082-2" [MSI:10.1007/s11306-007-0082-2]
+
+[Term]
+id: MIECO_0000103
+name: MSI level 4: Unknown compound
+is_a: MIECO_0000099
+IAO_0000115: An unidentified or unclassified metabolite, which can still be differentiated and quantified based upon spectral data, as described in doi:10.1007/s11306-007-0082-2" [MSI:10.1007/s11306-007-0082-2]
+
+[Term]
+id: ECO_0000000
+name: ECO_0000000
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0000091
+name: ECO_0000091
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0000203
+name: ECO_0000203
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0000218
+name: ECO_0000218
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0000325
+name: ECO_0000325
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0000352
+name: ECO_0000352
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0001052
+name: ECO_0001052
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0001096
+name: ECO_0001096
+namespace: obo
+is_a: Thing
+
+[Term]
+id: ECO_0001105
+name: ECO_0001105
+namespace: obo
+is_a: Thing
+
+
+! ----------------------  PROPERTIES  -------------------------
+
+[Typedef]
+id: MIECO_0000060
+name: of
+is_metadata_tag: false
+
+[Typedef]
+id: MIECO_0000061
+name: via
+is_metadata_tag: false
+
+[Typedef]
+id: MIECO_0000074
+name: supports
+is_metadata_tag: false
+
+[Typedef]
+id: ECO_9000000
+name: ECO_9000000
+namespace: obo
+is_metadata_tag: false
+
+[Typedef]
+id: OBI_0000293
+name: OBI_0000293
+namespace: obo
+is_metadata_tag: false
+
+
+! ----------------------  INSTANCES  -------------------------

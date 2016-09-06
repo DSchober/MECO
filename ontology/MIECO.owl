@@ -103,14 +103,14 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
         <rdfs:subClassOf rdf:resource="&obo;ECO_0001096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;ECO_9000000"/>
-                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000070"/>
+                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000074"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000074"/>
-                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000073"/>
+                <owl:onProperty rdf:resource="&obo;ECO_9000000"/>
+                <owl:someValuesFrom rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000070"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1021,7 +1021,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104">
-        <rdfs:label xml:lang="de">Metabolite identification evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Small molecule identification evidence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ECO_0000000"/>
     </owl:Class>
     
@@ -1030,9 +1030,9 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105">
-        <rdfs:label xml:lang="de">Eawag 2014 metabolite identification level</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag 2014 small molecule identification level</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000104"/>
-        <obo:IAO_0000115 xml:lang="en">An expansion of the MSI scheme described in a paper by Schymanski E et al. (2014) at doi:10.1021/es5002105</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Confidence levels for identifying small molecules via high resolution mass spectrometry as described in Schymanski et al 2014 DOI::10.1021/es5002105</obo:IAO_0000115>
         <oboInOwl:hasDbXref xml:lang="en">http://pubs.acs.org/doi/ipdf/10.1021/es5002105</oboInOwl:hasDbXref>
         <obo:IAO_0000116 xml:lang="en">rebin into mass spectrometry evidence</obo:IAO_0000116>
     </owl:Class>
@@ -1051,7 +1051,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107">
-        <rdfs:label xml:lang="de">Eawag level 2: Probable structure evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 2: Probable structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
     </owl:Class>
     
@@ -1060,7 +1060,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000108 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000108">
-        <rdfs:label xml:lang="de">Eawag level 2a: Probable structure evidence by library spectrum match</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 2a: Probable structure by library spectrum match</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107"/>
     </owl:Class>
     
@@ -1069,7 +1069,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000109 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000109">
-        <rdfs:label xml:lang="de">Eawag level 2b: Probable structure evidence by diagnostic evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 2b: Probable structure by diagnostic evidence</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000107"/>
     </owl:Class>
     
@@ -1078,7 +1078,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000110 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000110">
-        <rdfs:label xml:lang="de">Eawag level 3: Tentative candidate evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 3: Tentative candidate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
     </owl:Class>
     
@@ -1087,7 +1087,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000111 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000111">
-        <rdfs:label xml:lang="de">Eawag level 4: Unequivocal molecular formula evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 4: Unequivocal molecular formula</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
     </owl:Class>
     
@@ -1096,7 +1096,7 @@ Build in a middle out approach, starting with a LC-MS Assay use case and then su
     <!-- http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000112 -->
 
     <owl:Class rdf:about="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000112">
-        <rdfs:label xml:lang="de">Eawag level 5: Exact mass of interest evidence</rdfs:label>
+        <rdfs:label xml:lang="de">Eawag level 5: Exact mass of interest</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://metabolomicssociety.org/ontologies/MIECO#MIECO_0000105"/>
     </owl:Class>
 </rdf:RDF>

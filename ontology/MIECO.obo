@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 05:09:2016 15:58
+date: 06:09:2016 11:31
 saved-by: dschober
 auto-generated-by: The OWL API (version 3.4.2)
 import: http://purl.obolibrary.org/obo/obi/obi_core.owl
@@ -542,16 +542,16 @@ IAO_0000115: An unidentified or unclassified metabolite, which can still be diff
 
 [Term]
 id: MIECO_0000104
-name: Metabolite identification evidence
+name: Small molecule identification evidence
 is_a: ECO_0000000
 
 [Term]
 id: MIECO_0000105
-name: Eawag 2014 metabolite identification level
+name: Eawag 2014 small molecule identification level
 is_a: MIECO_0000104
 hasDbXref: http://pubs.acs.org/doi/ipdf/10.1021/es5002105
 IAO_0000116: rebin into mass spectrometry evidence
-IAO_0000115: An expansion of the MSI scheme described in a paper by Schymanski E et al. (2014) at doi:10.1021/es5002105
+IAO_0000115: Confidence levels for identifying small molecules via high resolution mass spectrometry as described in Schymanski et al 2014 DOI::10.1021/es5002105
 
 [Term]
 id: MIECO_0000106
@@ -560,32 +560,32 @@ is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000107
-name: Eawag level 2: Probable structure evidence
+name: Eawag level 2: Probable structure
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000108
-name: Eawag level 2a: Probable structure evidence by library spectrum match
+name: Eawag level 2a: Probable structure by library spectrum match
 is_a: MIECO_0000107
 
 [Term]
 id: MIECO_0000109
-name: Eawag level 2b: Probable structure evidence by diagnostic evidence
+name: Eawag level 2b: Probable structure by diagnostic evidence
 is_a: MIECO_0000107
 
 [Term]
 id: MIECO_0000110
-name: Eawag level 3: Tentative candidate evidence
+name: Eawag level 3: Tentative candidate
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000111
-name: Eawag level 4: Unequivocal molecular formula evidence
+name: Eawag level 4: Unequivocal molecular formula
 is_a: MIECO_0000105
 
 [Term]
 id: MIECO_0000112
-name: Eawag level 5: Exact mass of interest evidence
+name: Eawag level 5: Exact mass of interest
 is_a: MIECO_0000105
 
 [Term]

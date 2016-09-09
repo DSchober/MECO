@@ -1,5 +1,5 @@
 format-version: 1.2
-date: 06:09:2016 11:31
+date: 09:09:2016 10:19
 saved-by: dschober
 auto-generated-by: The OWL API (version 3.4.2)
 import: http://purl.obolibrary.org/obo/obi/obi_core.owl
@@ -142,32 +142,32 @@ is_a: ECO_0001096
 
 [Term]
 id: MIECO_0000021
-name: Characterisation by stereochemistry assay evidence
+name: Characterisation by stereochemistry assay
 is_a: ECO_0000091
 
 [Term]
 id: MIECO_0000022
-name: circular dichroism based stereochemistry assay evidence
+name: Characterisation by circular dichroism based stereochemistry assay
 is_a: MIECO_0000021
 
 [Term]
 id: MIECO_0000023
-name: alpha D value stereochemistry assay evidence
+name: Characterisation by alpha D value stereochemistry assay
 is_a: MIECO_0000021
 
 [Term]
 id: MIECO_0000024
-name: Characterisation by optical absorbance spectrum assay similarity
+name: Characterisation by optical absorbance spectrum assay
 is_a: ECO_0000091
 
 [Term]
 id: MIECO_0000025
-name: Characterisation by IR absorbance spectrum assay similarity
+name: Characterisation by IR absorbance spectrum assay
 is_a: MIECO_0000024
 
 [Term]
 id: MIECO_0000026
-name: Characterisation by UV absorbance spectrum assay similarity
+name: Characterisation by UV absorbance spectrum assay
 is_a: MIECO_0000024
 
 [Term]
@@ -293,13 +293,14 @@ is_a: Thing
 
 [Term]
 id: MIECO_0000053
-name: molecule
+name: molecule instance
 is_a: MIECO_0000052
 
 [Term]
 id: MIECO_0000054
 name: molecule class
 is_a: MIECO_0000052
+IAO_0000116: put under Chebi:molecular entity
 
 [Term]
 id: MIECO_0000055
@@ -313,23 +314,25 @@ is_a: MIECO_0000055
 
 [Term]
 id: MIECO_0000057
-name: chemical element
+name: portion of chemical element
 is_a: MIECO_0000052
 
 [Term]
 id: MIECO_0000058
-name: isotope
+name: portion of isotope
 is_a: MIECO_0000057
 
 [Term]
 id: MIECO_0000062
 name: assay
 is_a: Thing
+IAO_0000116: put under obi:analyte assay
 
 [Term]
 id: MIECO_0000063
 name: mass spectrometry
 is_a: MIECO_0000062
+IAO_0000116: outlink to mzML CV
 
 [Term]
 id: MIECO_0000064
@@ -396,6 +399,7 @@ relationship: MIECO_0000060 MIECO_0000053
 id: MIECO_0000075
 name: NMR
 is_a: MIECO_0000062
+IAO_0000116: outlink to nmrCV
 
 [Term]
 id: MIECO_0000076
@@ -587,6 +591,28 @@ is_a: MIECO_0000105
 id: MIECO_0000112
 name: Eawag level 5: Exact mass of interest
 is_a: MIECO_0000105
+
+[Term]
+id: MIECO_0000113
+name: triple bond
+is_a: MIECO_0000083
+
+[Term]
+id: MIECO_0000114
+name: singular bond
+is_a: MIECO_0000083
+
+[Term]
+id: MIECO_0000115
+name: atom
+is_a: MIECO_0000052
+
+[Term]
+id: MIECO_0000116
+name: assay outcome
+is_a: Thing
+IAO_0000118: assay result
+IAO_0000116: put under iao:measurement datum
 
 [Term]
 id: ECO_0000000
